@@ -1,0 +1,14 @@
+
+    <label for="title" class="form-label">Title</label>
+    <input required type="text" name="title" id="title" placeholder="Title" class="form-control form-control-lg"
+    <% if (articles.id !== undefined){ %>
+        value = <%= articles.title %>
+       <% }else{ %>
+
+       <% } %> >
+    <label for="description" class="form-label">Description</label>
+    <textarea name="description" id="description" placeholder="Description!" class="form-control form-control-lg"><% if (articles.id !== undefined){ %><%= articles.description %>
+       <% }else{ %><% } %></textarea>
+    <label for="markdown">Markdown</label>
+    <textarea required name="markdown" id="markdown" placeholder="Markdown" class="form-control form-control-lg"><% if (articles.id !== undefined){ %><%= articles.markdown %>
+       <% }else{ %><% } %></textarea>
